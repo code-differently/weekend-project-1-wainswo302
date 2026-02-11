@@ -13,22 +13,22 @@ minus any discount codes, letting the user know if they have enough funds or not
 The program takes input for the user's:
 * name
 * budget
-* A discount code.
 
 A receipt is then generated containing:
 
 * The name of the store
-* A receipt code
-* 3 item prices
+* A visit ID code (First 3 letters of name and random 5 digits)
+* 3 random item prices (Appetizer, Entree, & Drink)
 * Subtotal
 * Price adjustments containing any price modifiers, such as tax and discount if applicable
 * The final total
 ---
 Sample Input & Output
 ----------------------------------------------------------------
-********************Final Receipt*********************
+**************************FAT BOY FREDDY's**********************
+**************************Final Receipt*************************
 Appetizer costs: $14.64
-Entree costs: $10.29
+Entrée costs: $10.29
 Drink costs: $5.69
 Discount: $0.0
 Here's your discounted pre-tax total: $30.62

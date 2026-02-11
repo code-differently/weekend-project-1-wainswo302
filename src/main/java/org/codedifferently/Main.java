@@ -5,7 +5,7 @@ public class Main {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("WELCOME TO FATBOY FREDDY'S \nHome of Fat Fingers and Fried Footlongs!");
+        System.out.println("WELCOME TO FAT BOY FREDDY'S \nHome of Fat Fingers and Fried Footlongs!");
         System.out.println("Enter your name: " );
         String userName = sc.nextLine();
         System.out.println("What is your budget?");
@@ -25,6 +25,7 @@ public class Main {
 
         double discount = Calculator.validateCoupon();
         double discountedSubtotal = Calculator.calcDiscount(subtotal,discount);
+        System.out.println("********************FAT BOY FREDDY's*******************");
         System.out.println("******************************************************");
         System.out.println("********************Final Receipt*********************");
         System.out.println("Appetizer costs: $" + Calculator.roundTotals(app1));
@@ -38,9 +39,7 @@ public class Main {
         double finalTotal = Calculator.calculateTrueTotal(discountedSubtotal,taxCharged);
         System.out.println("Total due: $" + Calculator.roundTotals(finalTotal));
         double finalBudget = Calculator.calculateBudget(userBudget,finalTotal);
-
         Calculator.completeTransaction(finalBudget);
         System.out.println("VisitID: " + RandomGenerator.generateReceiptCode(userName));
-
     }
     }

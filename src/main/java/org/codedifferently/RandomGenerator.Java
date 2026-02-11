@@ -3,8 +3,6 @@ package org.codedifferently;
 import java.util.Random;
 
 class RandomGenerator {
-    String storeName = "Fatboy Freddy's";
-    int visitID;
     static double entree;
     static double appetizer;
     static double drink;

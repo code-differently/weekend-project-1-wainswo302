@@ -20,12 +20,11 @@ public class Calculator {
     }//return actual taxes to be billed
 
     public static double calculateSubtotal(double appetizer, double entree, double drink) {
-        double subtotal = appetizer + entree + drink;
-//        if (discount > 0) {
+        //        if (discount > 0) {
 //            subtotal = subtotal * discount;
 //        } else {
 //        }
-        return subtotal;
+        return appetizer + entree + drink;
     }
 
     public static double calculateBudget(double userBudget, double trueTotal) {
