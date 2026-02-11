@@ -58,7 +58,7 @@ public class Calculator {
         }
     }
 
-    public static double applyDiscount(double subtotal, double discount) {
+    public static double calcDiscount(double subtotal, double discount) {
         return roundTotals(subtotal*(1-discount));
         }
     public static double calculateTrueTotal(double subtotal, double taxCharged) {

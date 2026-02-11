@@ -24,7 +24,13 @@ public class Main {
         System.out.println("Do you have a coupon code to enter?");
 
         double discount = Calculator.validateCoupon();
-        double discountedSubtotal = Calculator.applyDiscount(subtotal,discount);
+        double discountedSubtotal = Calculator.calcDiscount(subtotal,discount);
+        System.out.println("******************************************************");
+        System.out.println("********************Final Receipt*********************");
+        System.out.println("Appetizer costs: $" + Calculator.roundTotals(app1));
+        System.out.println("Entree costs: $" + Calculator.roundTotals(ent1));
+        System.out.println("Drink costs: $" + Calculator.roundTotals(drink1));
+        System.out.println("Discount: -$" + discount);
         System.out.println("Here's your discounted pre-tax total: $"+ discountedSubtotal);
         double randomTaxRate = Calculator.returnRandomTaxRate();
         double taxCharged = Calculator.calcTax(discountedSubtotal,randomTaxRate);
@@ -34,7 +40,7 @@ public class Main {
         double finalBudget = Calculator.calculateBudget(userBudget,finalTotal);
 
         Calculator.completeTransaction(finalBudget);
-        System.out.println(RandomGenerator.generateReceiptCode(userName));
+        System.out.println("VisitID: " + RandomGenerator.generateReceiptCode(userName));
 
     }
     }

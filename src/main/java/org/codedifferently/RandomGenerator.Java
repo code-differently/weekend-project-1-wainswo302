@@ -5,10 +5,6 @@ import java.util.Random;
 class RandomGenerator {
     String storeName = "Fatboy Freddy's";
     int visitID;
-    String couponCode;
-    double userBudget;
-    double taxRate;
-    double discount;
     static double entree;
     static double appetizer;
     static double drink;
